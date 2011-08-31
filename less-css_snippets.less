@@ -108,13 +108,13 @@
   } 
 
   .gradient-deg(@start: #555, @stop: #333, @deg: 45deg) {
-    background-color: @endColor;
+    background-color: @stop;
     background-repeat:repeat-x;
-    background-image: -webkit-linear-gradient(@deg, @startColor, @endColor);
-    background-image: -moz-linear-gradient(@deg, @startColor, @endColor);
-    background-image: -o-linear-gradient(@deg, @startColor, @endColor);
-    background-image: -ms-linear-gradient(@deg, @startColor, @endColor);
-    background-image: linear-gradient(@deg, @startColor, @endColor);
+    background-image: -webkit-linear-gradient(@deg, @start, @stop);
+    background-image: -moz-linear-gradient(@deg, @start, @stop);
+    background-image: -o-linear-gradient(@deg, @start, @stop);
+    background-image: -ms-linear-gradient(@deg, @start, @stop);
+    background-image: linear-gradient(@deg, @start, @stop);
   }
 
   // Clearing floats like a boss: goo.gl/zm1oD
